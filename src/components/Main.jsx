@@ -3,6 +3,7 @@ import Blog from "./Blog";
 
 const Main = () => {
   const [blogs, setBlogs] = useState([]);
+  const [bookmarks, setBookmarks] = useState([]);
 
   useEffect(() => {
     fetch("data.json")
@@ -10,12 +11,20 @@ const Main = () => {
       .then((data) => setBlogs(data));
   }, []);
 
+  const handleBookmarkBlogs = (title) => {
+    setBookmarks([...bookmarks, title]);
+  };
+
   return (
     <main className="flex justify-between gap-[24px]">
       {/* Blog Section */}
       <section id="blogs" className="grid grid-cols-1 gap-4 w-[60%]">
         {blogs.map((blog, index) => (
-          <Blog blog={blog} key={index} />
+          <Blog
+            blog={blog}
+            handleBookmarkBlogs={handleBookmarkBlogs}
+            key={index}
+          />
         ))}
       </section>
       {/* Bookmark Section */}
@@ -25,10 +34,15 @@ const Main = () => {
         </h1>
         <div className="mt-[24px] bg-black/5 rounded-[8px] p-[30px]">
           <h1 className="text-[20px] font-bold">Bookmarked Blogs: 8</h1>
-          <div className="mt-4">
-            <h1 className="bg-white rounded-[8px] p-4 font-semibold">
-              How to Build a Personal Brand in 2025
-            </h1>
+          <div className="mt-4 flex flex-col gap-4">
+            {bookmarks.map((mark, index) => (
+              <h1
+                key={index}
+                className="bg-white rounded-[8px] p-4 font-semibold"
+              >
+                {mark}
+              </h1>
+            ))}
           </div>
         </div>
       </section>

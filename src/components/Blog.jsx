@@ -1,6 +1,6 @@
 import bookmarkIcon from "../assets/icons/bookmark.svg";
 
-const Blog = ({ blog }) => {
+const Blog = ({ blog, handleBookmarkBlogs }) => {
   const {
     image,
     authorName,
@@ -40,7 +40,10 @@ const Blog = ({ blog }) => {
             <p key={index}>{tag}</p>
           ))}
         </div>
-        <button className="text-[20px] font-semibold text-[#6047EC] mt-4 hover:underline cursor-pointer">
+        <button
+          onClick={() => handleBookmarkBlogs(title)}
+          className="text-[20px] font-semibold text-[#6047EC] mt-4 hover:underline cursor-pointer"
+        >
           Mark as read
         </button>
         <div className="h-[1px] bg-black/20 my-3"></div>

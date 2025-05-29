@@ -1,5 +1,10 @@
 import { useEffect, useState } from "react";
 import Blog from "./Blog";
+import {
+  getStorageItems,
+  removeStorageItems,
+  setStorageItems,
+} from "../utils/localStorage";
 
 const Main = () => {
   const [blogs, setBlogs] = useState([]);
@@ -12,11 +17,33 @@ const Main = () => {
       .then((data) => setBlogs(data));
   }, []);
 
+  useEffect(() => {
+    const localStorageItems = getStorageItems();
+    const storedItem = [];
+
+    if (localStorageItems.length > 0) {
+      for (const id of localStorageItems) {
+        const blogInfo = blogs.find((blog) => blog.id === id);
+
+        if (blogInfo) {
+          storedItem.push(blogInfo.title);
+        }
+      }
+    }
+
+    setBookmarks(storedItem);
+  }, [blogs]);
+
   const handleBookmarkBlogs = (id, title) => {
     setBlogs((prevBlogs) =>
       prevBlogs.map((blog) => {
-        if (blog.id === id) {
-          return { ...blog, bookmark: !blog.bookmark };
+        if (blog.id === id && !blog.bookmark) {
+          // Set id to local storage
+          setStorageItems(id);
+          return { ...blog, bookmark: true };
+        } else if (blog.id === id && blog.bookmark) {
+          removeStorageItems(id);
+          return { ...blog, bookmark: false };
         }
         return blog;
       })

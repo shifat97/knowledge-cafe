@@ -2,6 +2,7 @@ import bookmarkIcon from "../assets/icons/bookmark.svg";
 
 const Blog = ({ blog, handleBookmarkBlogs }) => {
   const {
+    id,
     image,
     authorName,
     authorImage,
@@ -9,6 +10,7 @@ const Blog = ({ blog, handleBookmarkBlogs }) => {
     totalReadTime,
     title,
     hashtags,
+    bookmark,
   } = blog;
 
   return (
@@ -27,8 +29,14 @@ const Blog = ({ blog, handleBookmarkBlogs }) => {
           </div>
           <div className="flex items-center gap-2">
             <p className="text-[20px] text-black/60">{totalReadTime}</p>
-            <button>
-              <img src={bookmarkIcon} alt="" />
+            <button onClick={() => handleBookmarkBlogs(id, title)}>
+              <img
+                className={`${
+                  bookmark ? "bg-green-400" : "bg-white"
+                } p-1 rounded-full`}
+                src={bookmarkIcon}
+                alt=""
+              />
             </button>
           </div>
         </div>
@@ -40,10 +48,7 @@ const Blog = ({ blog, handleBookmarkBlogs }) => {
             <p key={index}>{tag}</p>
           ))}
         </div>
-        <button
-          onClick={() => handleBookmarkBlogs(title)}
-          className="text-[20px] font-semibold text-[#6047EC] mt-4 hover:underline cursor-pointer"
-        >
+        <button className="text-[20px] font-semibold text-[#6047EC] mt-4 hover:underline cursor-pointer">
           Mark as read
         </button>
         <div className="h-[1px] bg-black/20 my-3"></div>

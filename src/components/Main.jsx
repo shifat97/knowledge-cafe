@@ -11,8 +11,25 @@ const Main = () => {
       .then((data) => setBlogs(data));
   }, []);
 
-  const handleBookmarkBlogs = (title) => {
-    setBookmarks([...bookmarks, title]);
+  const handleBookmarkBlogs = (id, title) => {
+    setBlogs((prevBlogs) =>
+      prevBlogs.map((blog) => {
+        if (blog.id === id) {
+          return { ...blog, bookmark: !blog.bookmark };
+        }
+        return blog;
+      })
+    );
+
+    setBookmarks((prevBookmarks) => {
+      const isAlreadyBookmarked = prevBookmarks.find((mark) => mark === title);
+
+      if (isAlreadyBookmarked) {
+        return prevBookmarks.filter((mark) => mark != title);
+      } else {
+        return [...prevBookmarks, title];
+      }
+    });
   };
 
   return (

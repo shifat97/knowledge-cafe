@@ -1,92 +1,112 @@
 [
   {
+    "id": "post_001",
     "image": "https://eternitymarketing.com/assets/image-cache/blog/How-to-Write-SEO-Friendly-Blogs-900x600px.2db26ef5.jpg",
     "authorName": "Emma Johnson",
     "authorImage": "👩‍💼",
     "postDate": "2025-05-20",
     "totalReadTime": "5 min read",
     "title": "10 Morning Habits That Boost Productivity",
-    "hashtags": ["#Productivity", "#Wellness", "#LifeHacks"]
+    "hashtags": ["#Productivity", "#Wellness", "#LifeHacks"],
+    "bookmark": false
   },
   {
+    "id": "post_002",
     "image": "https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2022/06/How_To_Start_A_Blog_-_article_image.jpg",
     "authorName": "Liam Smith",
     "authorImage": "👨‍💼",
     "postDate": "2025-05-18",
     "totalReadTime": "7 min read",
     "title": "How to Build a Personal Brand in 2025",
-    "hashtags": ["#PersonalBrand", "#Marketing", "#Career"]
+    "hashtags": ["#PersonalBrand", "#Marketing", "#Career"],
+    "bookmark": false
   },
   {
+    "id": "post_003",
     "image": "https://greatcontent.com/wp-content/uploads/2022/01/glenn-carstens-peters-npxXWgQ33ZQ-unsplash_11zon-1024x681.jpeg",
     "authorName": "Sophia Williams",
     "authorImage": "👩‍🎨",
     "postDate": "2025-05-15",
     "totalReadTime": "6 min read",
     "title": "Top 5 UI/UX Trends You Can't Ignore",
-    "hashtags": ["#UIUX", "#Design", "#WebDevelopment"]
+    "hashtags": ["#UIUX", "#Design", "#WebDevelopment"],
+    "bookmark": false
   },
   {
+    "id": "post_004",
     "image": "https://quasa.io/storage/images/news/iNbJtYPT0Iib2PrO3YVWx8P28MuGIbCTx02Xz10E.jpg",
     "authorName": "Noah Brown",
     "authorImage": "🧑‍💻",
     "postDate": "2025-05-14",
     "totalReadTime": "4 min read",
     "title": "Beginner's Guide to Investing in Crypto",
-    "hashtags": ["#Crypto", "#Finance", "#Investing"]
+    "hashtags": ["#Crypto", "#Finance", "#Investing"],
+    "bookmark": false
   },
   {
+    "id": "post_005",
     "image": "https://www.searchenginejournal.com/wp-content/uploads/2020/08/7-ways-a-blog-can-help-your-business-right-now-5f3c06b9eb24e-1280x720.png",
     "authorName": "Olivia Davis",
     "authorImage": "👩‍💻",
     "postDate": "2025-05-13",
     "totalReadTime": "8 min read",
     "title": "Mastering JavaScript in 2025: Tips and Tricks",
-    "hashtags": ["#JavaScript", "#Coding", "#WebDev"]
+    "hashtags": ["#JavaScript", "#Coding", "#WebDev"],
+    "bookmark": false
   },
   {
+    "id": "post_006",
     "image": "https://www.noboundsdigital.com/hubfs/social-suggested-images/blogging.jpg",
     "authorName": "William Martinez",
     "authorImage": "🧑‍⚕️",
     "postDate": "2025-05-10",
     "totalReadTime": "9 min read",
     "title": "How AI is Reshaping Healthcare",
-    "hashtags": ["#AI", "#Healthcare", "#Technology"]
+    "hashtags": ["#AI", "#Healthcare", "#Technology"],
+    "bookmark": false
   },
   {
+    "id": "post_007",
     "image": "https://www.farinasmarketing.com/wp-content/uploads/2019/07/Blogging.png",
     "authorName": "Ava Garcia",
     "authorImage": "🧘‍♀️",
     "postDate": "2025-05-08",
     "totalReadTime": "3 min read",
     "title": "The Minimalist Lifestyle: Less is More",
-    "hashtags": ["#Minimalism", "#Lifestyle", "#Mindfulness"]
+    "hashtags": ["#Minimalism", "#Lifestyle", "#Mindfulness"],
+    "bookmark": false
   },
   {
+    "id": "post_008",
     "image": "https://www.shutterstock.com/image-photo/blogging-blog-word-coder-coding-260nw-520314613.jpg",
     "authorName": "James Lee",
     "authorImage": "🧑‍🏫",
     "postDate": "2025-05-07",
     "totalReadTime": "5 min read",
     "title": "Remote Work in 2025: The New Normal?",
-    "hashtags": ["#RemoteWork", "#WorkFromHome", "#FutureOfWork"]
+    "hashtags": ["#RemoteWork", "#WorkFromHome", "#FutureOfWork"],
+    "bookmark": false
   },
   {
+    "id": "post_009",
     "image": "https://img.freepik.com/free-photo/teamwork-making-online-blog_53876-94868.jpg",
     "authorName": "Isabella Thompson",
     "authorImage": "🏋️‍♀️",
     "postDate": "2025-05-04",
     "totalReadTime": "6 min read",
     "title": "How to Stay Fit Without a Gym",
-    "hashtags": ["#Fitness", "#Health", "#WorkoutAtHome"]
+    "hashtags": ["#Fitness", "#Health", "#WorkoutAtHome"],
+    "bookmark": false
   },
   {
+    "id": "post_010",
     "image": "https://www.shutterstock.com/image-photo/blog-weblog-media-digital-social-260nw-393501199.jpg",
     "authorName": "Benjamin White",
     "authorImage": "👨‍🔬",
     "postDate": "2025-05-01",
     "totalReadTime": "7 min read",
     "title": "Breaking Down the Basics of Blockchain",
-    "hashtags": ["#Blockchain", "#Technology", "#Innovation"]
+    "hashtags": ["#Blockchain", "#Technology", "#Innovation"],
+    "bookmark": false
   }
 ]
